@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": ["--spatial_encoder_embedding", "--data_enhance", 
+                        "--base=configs/latent-diffusion/txt2img-1p4B-finetune-encoder+embedding.yaml", "-t",
+                        "--actual_resume=models/ldm/text2img-large/model.ckpt",  
+                        "--name=test", 
+                        "--init_word=anomaly",]
+        }
+    ]
+}

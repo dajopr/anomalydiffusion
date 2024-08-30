@@ -1,0 +1,7 @@
+datasets
+logs
+models
+results
+
+*.pyc
+*.ckpt
